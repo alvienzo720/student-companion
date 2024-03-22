@@ -2,10 +2,10 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="flex flex-col  bg-white p-10 rounded-2xl">
+    <div className="flex justify-center items-center flex-col bg-white p-10 rounded-2xl">
       <div className="">
         <h1 className="text-3xl text-center mb-7 font-extrabold">
-          STUDENT COMPANION
+          <span className="text-[#FEAF00] h-5">I</span> STUDENT COMPANION
         </h1>
       </div>
       <div>
@@ -34,7 +34,7 @@ const Form = () => {
           placeholder="  Enter your password"
         />
       </div>
-      <div className="text-center w-[415px] h-[55px] bg-[#FEAF00] text-white rounded-md">
+      <div className="flex justify-center items-center text-center w-[415px] h-[55px] bg-[#FEAF00] text-white rounded-md">
         <button type="submit">SIGN IN</button>
       </div>
 
