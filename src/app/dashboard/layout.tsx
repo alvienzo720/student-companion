@@ -85,22 +85,55 @@ export default function DashboardLayout({
                 </div>
                 <div>Reports</div>
               </div>
-            </div>
-            <div className="flex flex-row items-center justify-center w-[193px] h-[41px] text-center mt-10">
-              <div className="mr-5">
-                <Image
-                  className=""
-                  src="/sliders-v-square1.png"
-                  alt="home-icon"
-                  width={12}
-                  height={15}
-                />
+              <div className="flex flex-row items-center justify-center w-[193px] h-[41px] text-center mt-10">
+                <div className="mr-5">
+                  <Image
+                    className=""
+                    src="/sliders-v-square1.png"
+                    alt="home-icon"
+                    width={12}
+                    height={15}
+                  />
+                </div>
+                <div>Settings</div>
               </div>
-              <div>Settings</div>
             </div>
           </aside>
-          <div className="flex-grow bg-zinc-700 p-4">
-            Main Section
+          <div className="flex-grow bg-slate-50">
+            <div className="flex items-center justify-between border-2 h-[60px] px-6">
+              <div>
+                <Image
+                  src="/caret-circle-down1.png"
+                  alt="Menu Icon"
+                  width={18}
+                  height={18}
+                />
+              </div>
+              <div className="flex-1"></div>
+              <div className="flex items-center border-2 rounded-md">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="px-4 py-2 w-full outline-none"
+                />
+                <button className="p-2">
+                  <Image
+                    src="/search1.png"
+                    alt="Search"
+                    width={18}
+                    height={18}
+                  />
+                </button>
+              </div>
+              <div className="ml-4">
+                <Image
+                  src="/bell1.png"
+                  alt="Notifications"
+                  width={18}
+                  height={18}
+                />
+              </div>
+            </div>
             {children}
           </div>
         </main>
