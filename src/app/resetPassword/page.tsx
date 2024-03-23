@@ -1,4 +1,6 @@
-export default function Home() {
+import React from "react";
+
+const ResetPassword = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="flex justify-center items-center flex-col bg-white p-10 rounded-2xl">
@@ -9,13 +11,13 @@ export default function Home() {
         </div>
         <div>
           <h2 className="text-2xl text-center mb-2 font-semibold font-Montserrat">
-            SIGN IN
+            PASSWORD RESET REQUEST
           </h2>
           <p className="text-normal text-center text-[#6C6C6C]">
-            Enter your credentials to access your account
+            Enter your email address to receive a password rest link
           </p>
         </div>
-        <div className="mt-7 w-[415px] h-[71px]">
+        <div className="mt-7 mb-4 w-[415px] h-[71px]">
           <span className="text-[#6C6C6C] text-base">Email</span>
           <br />
           <input
@@ -24,34 +26,22 @@ export default function Home() {
             placeholder="  Enter your email"
           />
         </div>
-        <div className="mt-7 mb-7 w-[415px] h-[71px]">
-          <span className="text-[#6C6C6C] text-base">Password</span>
-          <br />
-          <input
-            className="rounded-sm border-2 w-[400px] h-[44px]"
-            type="password"
-            placeholder="  Enter your password"
-          />
-        </div>
+
         <div className="flex justify-center items-center text-center w-[415px] h-[55px] bg-[#FEAF00] text-white rounded-md">
-          <button type="submit">SIGN IN</button>
+          <button type="submit">RESET PASSWORD</button>
         </div>
 
         <div className="mt-10 text-center">
           <p>
-            Forgot Your password?{" "}
-            <a className="text-[#FEAF00] underline" href="/resetPassword">
-              Reset Password
-            </a>
-          </p>
-          <p>
-            Create Account{" "}
-            <a className="text-[#FEAF00] underline" href="/sign-up">
-              Sign Up
+            Have An Account?{" "}
+            <a className="text-[#FEAF00] underline" href="/">
+              Sign In
             </a>
           </p>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default ResetPassword;
