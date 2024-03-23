@@ -3,7 +3,7 @@ import React from "react";
 const Form = () => {
   return (
     <div className="flex justify-center items-center flex-col bg-white p-10 rounded-2xl">
-      <div className="">
+      <div>
         <h1 className="text-3xl text-center mb-7 font-extrabold">
           <span className="text-[#FEAF00] h-5">I</span> STUDENT COMPANION
         </h1>
